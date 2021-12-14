@@ -3,55 +3,67 @@
 #authors {
     background-color: white;
     width: 100%;
+    padding: 200px 0 0 0;
 }
+
 .inner-rus {
     width: calc(100% - 220px);
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 100px 0 120px;
 }
-.wrap{
+
+.wrap {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding-bottom: 50px;
 }
-.autors_left{
+
+.autors_left {
     width: 50%;
     padding-top: 163px;
 }
+
 .autors_left h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 55px;
     line-height: 55, 76px;
     font-weight: 700;
 }
+
 .autors_lefttop {
     display: flex;
     flex-direction: row;
     padding-top: 56px;
     width: 100%;
 }
+
 .autors_photo {
     width: 189px;
     height: 178px;
 }
+
 .information_kyznetsov {
     padding-top: 56px;
 }
+
 .autor_speciality {
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
     line-height: 30, 42px;
     font-weight: 700;
 }
-.speciality_two, .speciality_three {
+
+.speciality_two,
+.speciality_three {
     display: none;
     font-family: 'Roboto', serif;
     font-size: 18px;
-    line-height: 23,4px;
+    line-height: 23, 4px;
     font-weight: 400;
 }
+
 .nav:hover .speciality_two {
     display: block;
     position: absolute;
@@ -59,10 +71,13 @@
     right: 90px;
     width: 224px;
 }
+
 .nav {
     position: relative;
 }
-.icon_auto, .icon_auto_two {
+
+.icon_auto,
+.icon_auto_two {
     background: #FFFFFF;
     box-shadow: 1px 1px 8px #5784C8;
     width: 28px;
@@ -74,6 +89,7 @@
     margin-top: 58px;
     margin-left: 20px;
 }
+
 .autors_leftbottom {
     width: 392px;
     height: 261px;
@@ -82,23 +98,28 @@
     border-radius: 30px;
     margin: 0 0 0 140px;
 }
-.autors_leftbottom p, .autors_rightbottom p {
+
+.autors_leftbottom p,
+.autors_rightbottom p {
     font-family: 'Roboto', serif;
     font-size: 18px;
-    line-height: 23,4px;
+    line-height: 23, 4px;
     font-weight: 400;
     padding: 31px 24px;
 }
+
 .autors_right {
     width: 50%;
     height: auto;
-    position: relative; 
+    position: relative;
 }
-.wrap_bot{
+
+.wrap_bot {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
+
 .man {
     padding: 0 0 40px 280px;
     width: 253px;
@@ -106,6 +127,7 @@
     position: absolute;
     bottom: 800px;
 }
+
 .autors_rightbottom {
     display: inline-block;
     width: 399px;
@@ -114,6 +136,7 @@
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
+
 .autors_righttop {
     padding-top: 30px;
     display: flex;
@@ -121,20 +144,24 @@
     display: flex;
     justify-content: center;
 }
+
 .autor_speciality_right {
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
     line-height: 30, 42px;
     font-weight: 700;
 }
+
 .icon_auto_two {
     margin: 0;
     margin-left: 20px;
 }
+
 .nav:hover .speciality_three {
     display: block;
     padding-top: 10px;
 }
+
 .speciality_three {
     position: absolute;
     left: -280px;
@@ -144,16 +171,17 @@
     font-weight: 400;
     width: 357px;
 }
+
 @media screen and (max-width:1279px) {
     .inner-rus {
         padding: 0 71px;
         width: calc(100% - 142px);
         max-width: 1279px;
     }
-    .wrap{
+    .wrap {
         padding-bottom: 29px;
     }
-    .autors_left{
+    .autors_left {
         padding-top: 94px;
     }
     .autors_left h2 {
@@ -164,14 +192,15 @@
         padding-top: 26px;
         height: 100px;
     }
-    .autors_photo{
+    .autors_photo {
         width: 30%;
     }
-    .autors_photo img, .autors_photo_right img{
+    .autors_photo img,
+    .autors_photo_right img {
         width: 109px;
         height: 103px;
     }
-    .autors_photo_right img{
+    .autors_photo_right img {
         padding-bottom: 40px;
         padding-right: 20px;
     }
@@ -180,9 +209,10 @@
     }
     .autor_speciality {
         font-size: 17px;
-        line-height: 17,24px;
+        line-height: 17, 24px;
     }
-    .speciality_two, .speciality_three {
+    .speciality_two,
+    .speciality_three {
         display: none;
         font-size: 10px;
         line-height: 13px;
@@ -195,7 +225,8 @@
         right: 10px;
         width: 124px;
     }
-    .icon_auto, .icon_auto_two {
+    .icon_auto,
+    .icon_auto_two {
         width: 16px;
         height: 16px;
         border-radius: 31px;
@@ -215,7 +246,8 @@
         border-radius: 18px;
         margin: 0 0 0 90px;
     }
-    .autors_leftbottom p, .autors_rightbottom p {
+    .autors_leftbottom p,
+    .autors_rightbottom p {
         font-size: 10px;
         line-height: 13px;
         padding: 17px 12px;
@@ -247,130 +279,132 @@
         font-size: 10px;
         line-height: 13px;
     }
-}  
-    @media screen and (max-width:833px) {
-        .inner-rus {
-            max-width: calc(375px - 33px * 2);
-            padding: 0 33px 0;
-        }
-        .icon_auto_two, .icon_auto {
-            display: none;
-        }
-        .speciality_three {
-            display: block;
-        }
-        .man {
-            display: none;
-        }
-        .wrap{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding-bottom: 0px;
-        }
-        .autors_left{
-            width: 100%;
-            padding-top: 74px;
-        }
-        .autors_left h2 {
-            font-size: 26px;
-            line-height: 26px;
-        }
-        .autors_lefttop {
-            padding-top: 22px;
-        }
-        .autors_photo img{
-            width: 88px;
-            height: 82px;
-        }
-        .information_kyznetsov {
-            width: 145px;
-            height: 27px;
-            padding-top: 26px;
-            position: relative;
-        }
-        .autor_speciality {
-            font-size: 14px;
-            line-height: 14px;
-        }
-        .speciality_two{
-            display: block;
-            font-size: 10px;
-            line-height: 13px;
-            top: 60px;
-            position: absolute;
-            left: -145px;
-            width: 140px;
-        }
-        .nav:hover .speciality_two {
-            display: none;
-        }
-        .icon_auto, .icon_auto_two {
-            display: none;
-        }
-        .autors_leftbottom {
-            width: 214px;
-            height: 124px;
-            margin: 0 0 0 90px;
-            box-shadow: none;
-            border-radius: 0;
-        }
-        .autors_leftbottom p, .autors_rightbottom p {
-            font-size: 10px;
-            line-height: 13px;
-            padding: 0;
-        }
-       
-        .autors_right {
-            position: relative;
-            width: 100%;
-            height: 350px;
-        }
-        .autors_photo_right img{
-            width: 88px;
-            height: 82px;
-        }
-        .information_kyznetsov_right{
-            width: 201px;
-            height: 46px;
-        }
-        .wrap_bot{
-            position: absolute;
-            top: 130px;
-            width: 207px;
-            height: 200px;
-            margin-left: 90px;
-        }
-        .autors_rightbottom {
-            width: 207px;
-            height: 182px;
-            box-shadow: none;
-            border-radius: 0px;
-        }
-        .autors_righttop {
-            padding-top: 30px;
-        }
-        .autor_speciality_right {
-            font-size: 14px;
-            line-height: 14px;
-            position: relative;
-            bottom: 15px;
-        }
-        .speciality_three {
-            left: -205px;
-            top: 50px;
-            font-size: 10px;
-            line-height: 13px;
-        }
-        .autors_photo_right{
-            width: 88px;
-            height: 82px;
-        }
+}
+
+@media screen and (max-width:833px) {
+    .inner-rus {
+        max-width: calc(375px - 33px * 2);
+        padding: 0 33px 0;
     }
+    .icon_auto_two,
+    .icon_auto {
+        display: none;
+    }
+    .speciality_three {
+        display: block;
+    }
+    .man {
+        display: none;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .autors_left {
+        width: 100%;
+        padding-top: 74px;
+    }
+    .autors_left h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .autors_lefttop {
+        padding-top: 22px;
+    }
+    .autors_photo img {
+        width: 88px;
+        height: 82px;
+    }
+    .information_kyznetsov {
+        width: 145px;
+        height: 27px;
+        padding-top: 26px;
+        position: relative;
+    }
+    .autor_speciality {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .speciality_two {
+        display: block;
+        font-size: 10px;
+        line-height: 13px;
+        top: 60px;
+        position: absolute;
+        left: -145px;
+        width: 140px;
+    }
+    .nav:hover .speciality_two {
+        display: none;
+    }
+    .icon_auto,
+    .icon_auto_two {
+        display: none;
+    }
+    .autors_leftbottom {
+        width: 214px;
+        height: 124px;
+        margin: 0 0 0 90px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .autors_leftbottom p,
+    .autors_rightbottom p {
+        font-size: 10px;
+        line-height: 13px;
+        padding: 0;
+    }
+    .autors_right {
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+    .autors_photo_right img {
+        width: 88px;
+        height: 82px;
+    }
+    .information_kyznetsov_right {
+        width: 201px;
+        height: 46px;
+    }
+    .wrap_bot {
+        position: absolute;
+        top: 130px;
+        width: 207px;
+        height: 200px;
+        margin-left: 90px;
+    }
+    .autors_rightbottom {
+        width: 207px;
+        height: 182px;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    .autors_righttop {
+        padding-top: 30px;
+    }
+    .autor_speciality_right {
+        font-size: 14px;
+        line-height: 14px;
+        position: relative;
+        bottom: 15px;
+    }
+    .speciality_three {
+        left: -205px;
+        top: 50px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .autors_photo_right {
+        width: 88px;
+        height: 82px;
+    }
+}
 
 
 /* ------------------------------------------------------------ */
-
 
 #description {
     background-color: #EFEFEF;
@@ -384,7 +418,8 @@
     padding: 0 120px 0;
     padding-bottom: 111px;
 }
-.test{
+
+.test {
     padding: 91 0 111px 0;
 }
 
@@ -438,6 +473,7 @@
     padding-left: 45px;
     color: #000000;
 }
+
 @media screen and (max-width:1279px) {
     .innermain_content7 {
         padding: 0 71px;
@@ -447,7 +483,7 @@
     }
     .test h2 {
         font-size: 32px;
-        line-height: 26,36px;
+        line-height: 26, 36px;
         padding-top: 52px;
     }
     .wrapper_information-content {
@@ -530,7 +566,6 @@
 
 
 /* ------------------------------------------------------------ */
-
 
 #info {
     width: 100%;
@@ -683,11 +718,11 @@
 
 /* ------------------------------------------------------------ */
 
-
 footer {
     width: 100%;
     background-color: #000000;
 }
+
 .inner_cont {
     display: flex;
     flex-direction: row;
