@@ -29,6 +29,7 @@ class TaskList {
     constructor() {
         this.container = document.querySelector('.task-list-cont');
         this.taskList = [];
+        this.draggableTask = null;
     }
     addTask() {
         const task = new Task(
@@ -36,6 +37,13 @@ class TaskList {
         );
         this.taskList.push(task);
         this.container.append(task.container);
+
+        task.container.draggable = true;
+        const eventListner = e => this.dadEventListener(e)
+        task.container.addEventListener('dragstart', eventListner);
+        task.container.addEventListener('dragend', eventListner);
+        task.container.addEventListener('dragenter', eventListner);
+
     }
     deleteTask(task) {
         const index = this.taskList.indexOf(task);
@@ -55,6 +63,34 @@ class TaskList {
         this.taskList.forEach(task => {
             this.container.append(task.container);
         })
+    }
+    dadEventListener(e) {
+        switch (e.type) {
+            case 'dragstart':
+                this.draggableTask = e.currentTarget;
+                break;
+            case 'dragenter':
+                if (
+                    e.currentTarget !== this.draggableTask &&
+                    e.currentTarget.classList.contains('task')
+                ) {
+                    this.changeTasks(this.draggableTask, e.currentTarget);
+                }
+                break;
+            case 'dragend':
+                this.draggableTask = null;
+                break;
+        }
+    }
+    changeTasks(task1, task2) {
+        const children = [...this.container.children];
+        const index1 = children.indexOf(task1);
+        const index2 = children.indexOf(task2);
+        if (index1 < index2) {
+            this.container.insertBefore(task2, task1);
+        } else {
+            this.container.insertBefore(task1, task2);
+        }
     }
 }
 
@@ -77,5 +113,4 @@ class Task {
         });
         this.input = this.container.querySelector('input')
     }
-
 }
