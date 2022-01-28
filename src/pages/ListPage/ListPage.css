@@ -1,5 +1,5 @@
 .list-page {
-    padding: 42px calc(50% - 300px);
+    padding: 42px calc(40% - 300px);
 }
 
 .list-page__title {
@@ -9,4 +9,5 @@
 
 .list-page ul li {
     font-size: 18px;
+    padding: 5px;
 }

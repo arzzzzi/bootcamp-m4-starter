@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { findFilm } from '../../redux/actions';
 import './SearchBox.css';
+import store from '../../redux/store';
 
 class SearchBox extends Component {
     state = {
@@ -8,8 +10,14 @@ class SearchBox extends Component {
     searchLineChangeHandler = (e) => {
         this.setState({ searchLine: e.target.value });
     }
+    
     searchBoxSubmitHandler = (e) => {
         e.preventDefault();
+        fetch(
+            `http://www.omdbapi.com/?s=${this.state.searchLine}&apikey=751f7b09`
+        )
+        .then(res => res.json())
+        .then(data => store.dispatch(findFilm(data.Search)))
     }
     render() {
         const { searchLine } = this.state;
